@@ -3,3 +3,19 @@ Temp/
 
 # ignore ALL files in ANY directory named Logs
 Logs/ 
+
+# ignore ALL files in ANY directory named MonoBleedingEdge
+MonoBleedingEdge/ 
+
+# ignore ALL files in ANY directory named My project_BurstDebugInformation_DoNotShip
+My project_BurstDebugInformation_DoNotShip/
+
+# ignore ALL files in ANY directory named My project_Data
+My project_Data/ 
+
+# ignore ALL files in ANY directory named UserSettings
+UserSettings/ 
+
+# ignore ALL files in ANY directory named Library
+Library/ 
+

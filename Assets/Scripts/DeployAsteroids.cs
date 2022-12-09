@@ -1,0 +1,48 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DeployAsteroids : MonoBehaviour
+{
+
+    public GameObject asteroid1;
+    public GameObject asteroid2;
+    public GameObject asteroid3;
+    private GameObject asteroid;
+    private float respawnTime = 0.6f;
+    private int x;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        StartCoroutine(asteroidWave());
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void spawnAsteroid(){
+        if(x == 0){
+            asteroid = asteroid1;
+        }
+        if(x == 1){
+            asteroid = asteroid2;
+        }
+        if(x == 2){
+            asteroid = asteroid3;
+        }
+        GameObject a = Instantiate(asteroid) as GameObject;
+        a.transform.position = new Vector3(Random.Range(-7, 8), 7, -1);
+    }
+
+    IEnumerator asteroidWave(){
+        while(true){
+            x = Random.Range(0, 3);
+            yield return new WaitForSeconds(respawnTime);
+            spawnAsteroid();
+        } 
+    }
+}
