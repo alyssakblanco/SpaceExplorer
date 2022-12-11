@@ -12,6 +12,33 @@ EditorBuildSettings:
     path: Assets/Scenes/NewGameScene.unity
     guid: a28aa22832d8bfc47aad225581dd5beb
   - enabled: 1
+    path: Assets/Scenes/Levels/EarthLevel.unity
+    guid: 1e22a6626909fef4da64888aa6b75f04
+  - enabled: 1
+    path: Assets/Scenes/Levels/JupiterLevel.unity
+    guid: e0d17a0f4a0b42444add3fbeda1c4e54
+  - enabled: 1
+    path: Assets/Scenes/Levels/MarsLevel.unity
+    guid: 938094b4de13114489e55636e988fc0b
+  - enabled: 1
+    path: Assets/Scenes/Levels/MercuryLevel.unity
+    guid: a60018b4b81b6b54b9f96cd11c592e09
+  - enabled: 1
+    path: Assets/Scenes/Levels/NeptuneLevel.unity
+    guid: 6de39081702f8f44a825600be3805fea
+  - enabled: 1
+    path: Assets/Scenes/Levels/PlutoLevel.unity
+    guid: ec0cb32f55973c64d924b448c07726ce
+  - enabled: 1
+    path: Assets/Scenes/Levels/SaturnLevel.unity
+    guid: b5265e2373dca8746a3fa9c53b9d0e19
+  - enabled: 1
+    path: Assets/Scenes/Levels/UranusLevel.unity
+    guid: fb2795189a56f7549af7864889f434d3
+  - enabled: 1
+    path: Assets/Scenes/Levels/VenusLevel.unity
+    guid: 80c5c1a4a50af054d9f425ce62d44ff7
+  - enabled: 1
     path: Assets/Scenes/FunFactScenes/SunFact.unity
     guid: 6b4235838b154a242bf5d71341a43784
   - enabled: 1

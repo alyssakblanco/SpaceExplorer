@@ -77,12 +77,14 @@ public class PlayerController : MonoBehaviour
                 GameObject e = Instantiate(explosion) as GameObject;
                 e.transform.position = transform.position;
                 Destroy(e, 0.5f);
-                Initiate.Fade("GameOverScene", Color.white, 0.5f);
+                Initiate.Fade("GameOverScene", Color.white, 1f);
             }
         }
-        if (other.gameObject.CompareTag("Powerup") ){
+        if (other.gameObject.CompareTag("Powerup")){
             soundEffect.Play();
-            Globals.lives += 1;
+            if(Globals.lives < 3){
+                Globals.lives++;
+            }
         }
     }
 

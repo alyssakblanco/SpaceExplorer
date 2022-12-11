@@ -37,7 +37,7 @@ public class RenderLives : MonoBehaviour
             star1.gameObject.SetActive(false);
             star2.gameObject.SetActive(false);
             star3.gameObject.SetActive(false);
-            Initiate.Fade("GameOverScene", Color.white, 0.5f);
+            Initiate.Fade("GameOverScene", Color.white, 1f);
         }
     }
 }

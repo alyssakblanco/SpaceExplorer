@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3738404601215344118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.3899, y: 0.34994, z: -1}
-  m_LocalScale: {x: 0.036962714, y: 0.036962714, z: 0.036962714}
+  m_LocalPosition: {x: -5.3899, y: 0.36647, z: -1}
+  m_LocalScale: {x: 0.06888741, y: 0.06888741, z: 0.06888741}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1915831125887465873}
@@ -137,7 +137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 329f75dab87ba4f48954955c9b45a2aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffect: {fileID: 7025858769803674316}
 --- !u!1 &8468768699076711587
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,11 @@ public class FinalScore : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Initiate.Fade("NewGameScene", Color.white, 0.5f);
+            Initiate.Fade("NewGameScene", Color.white, 1f);
+        }
+        if (Input.GetKeyDown("space"))
+        {
+            Initiate.Fade("SunFact", Color.white, 1f);
         }
     }
 }

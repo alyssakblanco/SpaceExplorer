@@ -130,6 +130,6 @@ public class DialogueController : MonoBehaviour
         // transition to next scene
         soundEffect.Stop();
         yield return new WaitForSeconds(2);
-        Initiate.Fade(nextScene, Color.white, 0.5f);
+        Initiate.Fade(nextScene, Color.white, 1f);
     }
 }
