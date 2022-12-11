@@ -8,9 +8,12 @@ public class DeployAsteroids : MonoBehaviour
     public GameObject asteroid1;
     public GameObject asteroid2;
     public GameObject asteroid3;
-    private GameObject asteroid;
+    public GameObject powerup;
+
+    private GameObject fallingObject;
     private float respawnTime = 0.6f;
     private int x;
+    private int y;
 
     // Start is called before the first frame update
     void Start()
@@ -26,21 +29,28 @@ public class DeployAsteroids : MonoBehaviour
 
     void spawnAsteroid(){
         if(x == 0){
-            asteroid = asteroid1;
+            fallingObject = asteroid1;
         }
         if(x == 1){
-            asteroid = asteroid2;
+            fallingObject = asteroid2;
         }
         if(x == 2){
-            asteroid = asteroid3;
+            fallingObject = asteroid3;
         }
-        GameObject a = Instantiate(asteroid) as GameObject;
+        if(x == 3){
+            fallingObject = powerup;
+        }
+        GameObject a = Instantiate(fallingObject) as GameObject;
         a.transform.position = new Vector3(Random.Range(-7, 8), 7, -1);
     }
 
     IEnumerator asteroidWave(){
         while(true){
             x = Random.Range(0, 3);
+            y = Random.Range(0, 20);
+            if ( Globals.lives < 3 && y == 5 ){
+                x = 3;
+            }
             yield return new WaitForSeconds(respawnTime);
             spawnAsteroid();
         } 

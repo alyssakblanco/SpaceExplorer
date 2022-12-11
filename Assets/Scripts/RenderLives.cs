@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class RenderLives : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public GameObject star1;
     public GameObject star2;
     public GameObject star3;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+    
+    }
 
     // Update is called once per frame
     void Update()
@@ -34,6 +34,9 @@ public class RenderLives : MonoBehaviour
             star3.gameObject.SetActive(false);
         }
         if(Globals.lives == 0){
+            star1.gameObject.SetActive(false);
+            star2.gameObject.SetActive(false);
+            star3.gameObject.SetActive(false);
             Initiate.Fade("GameOverScene", Color.white, 0.5f);
         }
     }

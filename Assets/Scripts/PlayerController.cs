@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public AudioSource soundEffect;
     public GameObject explosion;
 
     [SerializeField]
@@ -84,6 +79,10 @@ public class PlayerController : MonoBehaviour
                 Destroy(e, 0.5f);
                 Initiate.Fade("GameOverScene", Color.white, 0.5f);
             }
+        }
+        if (other.gameObject.CompareTag("Powerup") ){
+            soundEffect.Play();
+            Globals.lives += 1;
         }
     }
 

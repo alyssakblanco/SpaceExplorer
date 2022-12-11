@@ -45,11 +45,13 @@ public class DialogueController : MonoBehaviour
     public TextMeshProUGUI DialogueText;
     public float DialogueSpeed;
     public string nextScene;
+    public AudioSource soundEffect;
     
     // private
     private string finalString;
     private string Fact;
     private int randFact;
+    private bool isTyping = false;
 
     // assigning the correct array to current planet to make this script resuable
     // doing it this way to appease C# assignment rules
@@ -107,28 +109,27 @@ public class DialogueController : MonoBehaviour
 
     IEnumerator printSentences(){
         // printing the random fact
-        foreach(char Character in Fact.ToCharArray()){
+        soundEffect.Play();
+        foreach(char Character in Fact.ToCharArray()){  
             DialogueText.text += Character;
             yield return new WaitForSeconds(DialogueSpeed);
         }
 
         // letting user read
+        soundEffect.Stop();
         DialogueText.text += "\n\n";
         yield return new WaitForSeconds(3);
         
         // next level about to start warning
+        soundEffect.Play();
         foreach(char Character in finalString.ToCharArray()){
             DialogueText.text += Character;
             yield return new WaitForSeconds(DialogueSpeed);
         }
 
         // transition to next scene
+        soundEffect.Stop();
         yield return new WaitForSeconds(2);
         Initiate.Fade(nextScene, Color.white, 0.5f);
     }
 }
-
-// https://www.youtube.com/watch?v=KJYXzAIwrsc
-// https://gamedevbeginner.com/how-to-move-objects-in-unity/
-// https://www.youtube.com/watch?v=XCOTK-a-1cc
-// https://www.youtube.com/watch?v=hvgfFNorZH8
