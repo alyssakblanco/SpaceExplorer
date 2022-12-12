@@ -2,11 +2,11 @@
 Final Project for CSCI E-23a <br/>
 https://github.com/alyssakblanco/SpaceExplorer
 
-Play the game online:
+<b>Play the game online:</b>
 https://alyssakblanco.github.io/SpaceExplorerWebGL_Build/ <br/>
 WebGL Repository: https://github.com/alyssakblanco/SpaceExplorerWebGL_Build
 
-Notes about playing the game online: <br/>
+<b>Notes about playing the game online:</b> <br/>
 Firefox does not work, please use Chrome or Edge. <br/>
 The sound doesn't start automatically, interact with the webpage to start sound.
 
