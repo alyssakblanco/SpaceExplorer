@@ -6,8 +6,7 @@ https://github.com/alyssakblanco/SpaceExplorer
 https://alyssakblanco.github.io/SpaceExplorerWebGL_Build/ <br/>
 WebGL Repository: https://github.com/alyssakblanco/SpaceExplorerWebGL_Build
 
-<b>Notes about playing the game online:</b> <br/>
-Firefox does not work, please use Chrome or Edge. <br/>
+<b>Note about playing the game online:</b> <br/>
 The sound doesn't start automatically, interact with the webpage to start sound.
 
 <b>Entry Scene:</b> NewGameScene
