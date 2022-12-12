@@ -1,6 +1,9 @@
 # SpaceExplorer
 Final Project for CSCI E-23a
 
+Playing the game on GitHub pages:
+The sound doesn't start automatically, interact with the webpage to start sound.
+
 <b>Entry Scene:</b> NewGameScene
 
 <b>How to win:</b> <br/>
