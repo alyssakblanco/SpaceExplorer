@@ -1,13 +1,13 @@
 # SpaceExplorer
-Final Project for CSCI E-23a
+Final Project for CSCI E-23a <br/>
 https://github.com/alyssakblanco/SpaceExplorer
 
 Play the game online:
-https://alyssakblanco.github.io/SpaceExplorerWebGL_Build/
+https://alyssakblanco.github.io/SpaceExplorerWebGL_Build/ <br/>
 Repository: https://github.com/alyssakblanco/SpaceExplorerWebGL_Build
 
-Notes about playing the game online:
-Firefox does not work, please use Chrome or Edge.
+Notes about playing the game online: <br/>
+Firefox does not work, please use Chrome or Edge. <br/>
 The sound doesn't start automatically, interact with the webpage to start sound.
 
 <b>Entry Scene:</b> NewGameScene
@@ -25,10 +25,10 @@ Get hit by asteroids 3 times. <br/>
 <b>How to score:</b> <br/>
 Score is based on your distance from the Sun ( the start of the game ) in miles.
 
-<b>Important Files:</b>
+<b>Important Files:</b> <br/>
 Every file under the Scripts directory besides Fade and Initiate were created by me for this game.
 <br/>
-<b>LevelProgression</b> - This file is how I keep track of when to move on to the next level. The length of each level is based on the actual distance between each planet. Included in this file are commented out variables to make the levels shorter so you can play through the whole game quickly.(denoted by the comments, "uncomment for quick testing of levels")
+<b>LevelProgression</b> - This file is how I keep track of when to move on to the next level. The length of each level is based on the actual distance between each planet. Included in this file are commented out variables to make the levels shorter so you can play through the whole game quickly. (Denoted by the comments, "uncomment for quick testing of levels")
 <br/>
 Other than that, each file in this directory is named after it's function.
 
