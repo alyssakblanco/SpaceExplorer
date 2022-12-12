@@ -4,7 +4,7 @@ https://github.com/alyssakblanco/SpaceExplorer
 
 Play the game online:
 https://alyssakblanco.github.io/SpaceExplorerWebGL_Build/ <br/>
-Repository: https://github.com/alyssakblanco/SpaceExplorerWebGL_Build
+WebGL Repository: https://github.com/alyssakblanco/SpaceExplorerWebGL_Build
 
 Notes about playing the game online: <br/>
 Firefox does not work, please use Chrome or Edge. <br/>
